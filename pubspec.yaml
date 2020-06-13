@@ -28,6 +28,32 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.3
+  percent_indicator: ^2.1.4
+  google_fonts: ^1.1.0
+  simple_animations: ^1.3.11
+  firebase_auth: ^0.16.1
+  cloud_firestore: ^0.13.6
+  firebase_messaging: ^6.0.16
+  mask_text_input_formatter: ^1.0.6
+  validadores: ^1.0.2
+  page_transition: ^1.1.5
+  curved_navigation_bar: ^0.3.2
+  scoped_model: ^1.0.1
+  firebase_storage: ^3.1.6
+  image_picker: ^0.6.7
+  carousel_pro: ^1.0.0
+  flutter_speed_dial: ^1.2.5
+  google_maps_flutter: ^0.5.28+1
+  geolocator: ^5.3.1
+  firebase_core: ^0.4.5
+  brasil_fields: ^0.1.0
+  url_launcher: ^5.4.10
+  smooth_star_rating: ^1.1.1
+  filter_list: ^0.0.1
+  country_code_picker: ^1.3.15
+  flutter_screenutil: ^1.1.0
+  animated_theme_switcher: ^1.0.6
+  line_awesome_icons: ^1.0.4+2
 
 dev_dependencies:
   flutter_test:
@@ -45,8 +71,18 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - images/touch.jpg
+    - images/universe.jpg
+    - images/digital.jpg
+    - images/digital_verde.jpg
+    - images/drawer1.jpg
+    - images/boy.jpg
+    - images/drawer_tel.jpg
+    - images/fundo1_verde.jpg
+    - images/fundo2_verde.jpg
+    - images/fundo_branco.jpg
+    - images/icons/mulher.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
