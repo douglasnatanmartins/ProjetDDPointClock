@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterpointclock/src/screens_home/home_screem.dart';
 import 'package:flutterpointclock/widgets/DrawerWidget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -25,8 +26,19 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
+          floatingActionButton: FloatingActionButton(
+            elevation: 3,
+            mini: false,
+            backgroundColor: Theme.of(context).primaryColor,
+            child: Icon(Icons.fingerprint, color: Colors.white),
+            onPressed: (){
+                showDialog(context: context,
+                builder: (context) => HomeDialog()
+                );
+            },
+          ),
           drawer: DrawerWidget(_pageController),
-          body: Container(color: Colors.red),
+          body: HomeScreem()
         ),
         Scaffold(
           appBar: AppBar(

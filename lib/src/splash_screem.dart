@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'file:///D:/APPS/flutter_point_clock/lib/src/screens_home/home_page.dart';
+import 'package:flutterpointclock/src/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
