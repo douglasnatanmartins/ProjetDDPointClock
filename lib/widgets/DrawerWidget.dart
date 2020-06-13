@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterpointclock/drawer_tile.dart';
+import 'file:///D:/APPS/flutter_point_clock/lib/tile/drawer_tile.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DrawerWidget extends StatelessWidget {
