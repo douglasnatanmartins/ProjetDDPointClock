@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterpointclock/src/screens_home/home_screem.dart';
 import 'package:flutterpointclock/widgets/DrawerWidget.dart';
+import 'package:flutterpointclock/widgets/dialogs/home_dialog.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,6 +12,38 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final _pageController = PageController();
+
+  String dia(int day){
+    switch(day){
+      case 1:
+        return "lun";
+        break;
+      case 2:
+        return "mar";
+        break;
+      case 3:
+        return "mie";
+        break;
+      case 4:
+        return "jue";
+        break;
+      case 5:
+        return "vie";
+        break;
+      case 6:
+        return "sab";
+        break;
+      case 7:
+        return "dom";
+        break;
+    }
+    return dia(_data.weekday);
+  }
+
+  var _data = new DateTime.now();
+
+  bool isStratRecebidoDialog = false;
+
   @override
   Widget build(BuildContext context) {
     return PageView(
@@ -18,6 +52,10 @@ class _HomePageState extends State<HomePage> {
       children: [
         Scaffold(
           appBar: AppBar(
+            elevation: 0.5,
+            iconTheme: IconThemeData(
+              color: Colors.white
+            ),
             title: Text(
               "Dia",
               style: GoogleFonts.amaranth(
@@ -26,6 +64,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
+         floatingActionButtonAnimator: FloatingActionButtonAnimator.scaling,
           floatingActionButton: FloatingActionButton(
             elevation: 3,
             mini: false,
@@ -33,12 +72,13 @@ class _HomePageState extends State<HomePage> {
             child: Icon(Icons.fingerprint, color: Colors.white),
             onPressed: (){
                 showDialog(context: context,
-                builder: (context) => HomeDialog()
-                );
+                builder: (context) => HomeDialog());
             },
           ),
           drawer: DrawerWidget(_pageController),
-          body: HomeScreem()
+          body:  HomeScreem(
+            isStartRecebido: isStratRecebidoDialog,
+          )
         ),
         Scaffold(
           appBar: AppBar(

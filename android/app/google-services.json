@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "759599632766",
+    "firebase_url": "https://timer-clock-3b423.firebaseio.com",
+    "project_id": "timer-clock-3b423",
+    "storage_bucket": "timer-clock-3b423.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759599632766:android:1adbdc3a1d68707451e32f",
+        "android_client_info": {
+          "package_name": "br.com.martins.flutterpointclock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759599632766-qid2lq0qt3djdlooqqcn35h9e5b48dhv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgUAcnverfdpsDvBo6HsOtXIKOPZvAFLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759599632766-qid2lq0qt3djdlooqqcn35h9e5b48dhv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
